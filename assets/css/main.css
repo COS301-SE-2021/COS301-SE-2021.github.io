@@ -180,10 +180,7 @@ article {
 	background-color: white !important;
 }
 
-.poptrox-overlay, .poptrox-popup, .caption {
-	overflow-y: scroll; /* has to be scroll, not auto */
-	-webkit-overflow-scrolling: touch;
-}
+ 
 .client {
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	background-position: 50% 50% !important;
@@ -1471,12 +1468,12 @@ input, select, textarea {
 				display: none;
 			}
 
-			.poptrox-popup .caption {
+			.poptrox-popup, .caption, .poptrox-overlay {
 				/* display: none !important; */
 				/* overflow: scroll !important; */
 				overflow-y: scroll; /* has to be scroll, not auto */
 				-webkit-overflow-scrolling: touch;
-				/* height: 200px; */
+			
 			}
 		}
 
