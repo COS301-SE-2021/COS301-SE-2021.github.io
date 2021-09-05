@@ -1470,15 +1470,11 @@ input, select, textarea {
 			}
 
 			.poptrox-popup .caption {
-				display: none !important;
+				/* display: none !important; */
+				overflow: scroll !important;
+				-webkit-overflow-scrolling: touch;
+				height: 200px;
 			}
-
-			.poptrox-popup .closer,
-			.poptrox-popup .nav-previous,
-			.poptrox-popup .nav-next {
-				display: none !important;
-			}
-
 		}
 
 /* Wrapper */

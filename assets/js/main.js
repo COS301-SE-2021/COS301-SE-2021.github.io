@@ -238,7 +238,7 @@
 
 		// Poptrox.
 			$main.poptrox({
-				baseZIndex: 20000,
+				baseZIndex: 200,
 				caption: function($a) {
 
 					var s = '';
@@ -266,7 +266,9 @@
 				usePopupForceClose: true,
 				usePopupLoader: true,
 				usePopupNav: true,
-				windowMargin: 50
+				windowMargin: 50,
+				
+				
 			});
 
 			// Hack: Set margins to 0 when 'xsmall' activates.
