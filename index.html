@@ -374,7 +374,7 @@
 				"name": "Give a Lot",
 				"team": "KidsNextDoor",
 				"description": "\n\t\t\t\t\tGive a Lot is a relatively simple idea that is meant to solve the problem that individuals and\n\t\t\t\t\torganisations encounter\n\t\t\t\t\twhen it comes to verifying the authenticity of charities and many other different types of\n\t\t\t\t\torganisations. Give a Lot\n\t\t\t\t\taims to solve this problem by becoming a central point of reference for the verification for\n\t\t\t\t\tcharities and other types\n\t\t\t\t\tof organisations.\n\t\t\t\t",
-				"logo": "images/fulls/UP.png",
+				"logo": "images/fulls/givealot-logo-red.png",
 				"github": "https://github.com/COS301-SE-2021/",
 				"email": "mailto:kidsnextdoor301y3@gmail.com",
 				"website": "#",
@@ -588,7 +588,7 @@
 			template.find(".description").html(projects[i].description);
 			template.find(".logo").attr("src", projects[i].logo);
 			template.find(".logo_link").attr("href", projects[i].logo);
-			template.find(".fa-github").attr("href", projects[i].github + projects[i].name.replace(" ", "-"));
+			template.find(".fa-github").attr("href", projects[i].github + projects[i].name.replaceAll(" ", "-"));
 			template.find(".fa-envelope").attr("href", projects[i].email);
 			if (projects[i].website !== "#") {
 				template.find(".fa-globe-africa").attr("href", projects[i].website);
