@@ -588,7 +588,7 @@
 			template.find(".description").html(projects[i].description);
 			template.find(".logo").attr("src", projects[i].logo);
 			template.find(".logo_link").attr("href", projects[i].logo);
-			template.find(".fa-github").attr("href", projects[i].github + projects[i].name);
+			template.find(".fa-github").attr("href", projects[i].github + projects[i].name.replace(" ", "-"));
 			template.find(".fa-envelope").attr("href", projects[i].email);
 			if (projects[i].website !== "#") {
 				template.find(".fa-globe-africa").attr("href", projects[i].website);
